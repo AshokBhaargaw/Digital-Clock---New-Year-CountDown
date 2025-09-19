@@ -5,22 +5,22 @@
     scroll-behavior: smooth;
 }
 
-.container {
-    height: 50vh;
+.container{
+    width: 100%;
     color: rgb(0, 255, 64);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    display: flex;
+    display: flex;  
+    flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
+    margin: auto auto;
+    padding: 40px 10%;
     font-size: 26px;
 }
 
-.clock, .countdown {
+.container > div {
     background: #222;
     width: 500px;
     height: 200px;
@@ -30,11 +30,17 @@
     box-shadow: 0 0 10px rgb(0, 255, 64);
 }
 
-.clock h2, .countdown h2 {
-    margin-bottom: 40px;
+.container div h2 {
+    display: block;
+    margin-bottom: 30px;
     font-size: 30px;
 }
+.container div:nth-child(3) h2{
+    margin-bottom: auto;
+}
 
-.clock b, .countdown b {
+b {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
 }
+ 
